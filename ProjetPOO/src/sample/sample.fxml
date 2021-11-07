@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="add_button" layoutX="59.0" layoutY="402.0" mnemonicParsing="false" onAction="#ButtonAction" text="Add file" />
+      <ListView fx:id="list_view" layoutX="14.0" layoutY="17.0" prefHeight="101.0" prefWidth="148.0" />
+      <TextArea fx:id="txt" editable="false" layoutX="188.0" layoutY="14.0" prefHeight="413.0" prefWidth="518.0" style="-fx-border-color: red;" wrapText="true" />
+      <ToggleButton fx:id="font_button" layoutX="117.0" layoutY="130.0" mnemonicParsing="false" onAction="#FontChange" text="Bold" />
+      <ToggleButton fx:id="font_button1" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#FontChange" text="Italic" />
+      <ComboBox fx:id="selectFont" layoutX="13.0" layoutY="171.0" onAction="#changeFont" prefWidth="150.0" promptText="Select font" />
+   </children>
+</AnchorPane>
